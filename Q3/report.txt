@@ -1,0 +1,62 @@
+****************************************
+Q3.1
+
+Linear Regression -
+	Training Accuracy: 86%
+	Testing Accuracy: 82%
+
+SVM -
+	Training Accuracy: 98%
+	Testing Accuracy: 96%
+
+MLP -
+	Training Accuracy: 98%
+	Testing Accuracy: 78%
+
+Random Forest -
+	Training Accuracy: 100%
+	Testing Accuracy: 96%
+
+****************************************
+Q3.2 - Hyperparameter tuning
+
+Random Forest -
+	n_estimators values tested (at least 3): 1,75,150
+
+	max_depth values tested (at least 3): 3,9,15
+
+	Best combination of parameter values:
+		n_estimators: 150
+		max_depth: 15
+
+	Testing Accuracy before tuning (default parameters): 96%
+	Testing Accuracy after tuning: 97%
+
+
+SVM -
+	Kernels values tested: rbf, linear
+	C values tested (at least 3): 0.01, 0.1, 1
+
+	Best combination of parameter values:
+		Kernel: rbf
+		C: 1
+
+	Testing Accuracy before tuning (default parameters): 96%
+	Testing Accuracy after tuning: 97%
+
+****************************************
+Q3.3
+
+For your SVM's CV run from Q3.2, state the highest mean testing accuracy
+across the sets of parameter values and its corresponding mean train score and mean fit time.
+
+SVM's highest mean testing/cross-validated accuracy (best score): 97%
+SVM's mean train score: 98%
+SVM's mean fit time: 0.302942
+
+****************************************
+Q3.4
+
+Best Classifier: SVM
+Why: Compared to all models SVM has the highest score (97%) and the fitting time is relatively low. Although Random-Forest has a similar score (97%) it has worse fitting time so we prefer SVM. Linear regression has an accuracy score  of 82% and MLP (78%) so we prefer SVM.
+
